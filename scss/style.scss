@@ -17,13 +17,18 @@ h1,h2,h3,h4,h5,h6 {
 p {
 	margin: 0 0 10px 0;
 }
+
+
 /* contaniner
 ===================================================================================*/
 .contaniner {
 	width: 100%;
-	max-width: 1170px;
+	max-width: 1200px;
 	margin: 0 auto;
+	padding: 0 15px;
 }
+
+
 /* header
 ===================================================================================*/
 .header{
@@ -33,7 +38,6 @@ p {
 	top: 0;
 	left: 0;
 	z-index: 1000;
-
 }
 .header__inner{
 	display: flex;
@@ -41,8 +45,8 @@ p {
 	align-items: center;
 	border-bottom: 1px solid silver;
 	padding: 35px 0;
-
 }
+
 
 /* nav
 ===================================================================================*/
@@ -65,6 +69,7 @@ p {
 .nav__link:hover {
 	opacity: 1;
 }
+
 
 /* intro
 ===================================================================================*/
@@ -101,6 +106,8 @@ p {
 	font-weight: 400;
 	margin-bottom: 60px;
 }
+
+
 /* button
 ===================================================================================*/
 .btn {
@@ -123,6 +130,7 @@ p {
 .btn--red:hover {
 	background-color: rgb(167, 26, 26);
 }
+
 
 /* features
 ===================================================================================*/
@@ -152,6 +160,8 @@ p {
 	line-height: 1.5;
 	color: #6c7279;
 }
+
+
 /* works
 ===================================================================================*/
 .works {
@@ -202,4 +212,125 @@ p {
 .works__text {
 	font-size: 14px;
 	color: #fff;
+}
+
+
+/* team
+===================================================================================*/
+.team {
+	margin: 100px 0 70px;
+}
+.team__inner {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+}
+.team__item {
+	width: 25%;
+	padding: 0 15px;
+	margin-bottom: 30px;
+}
+
+.team__img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+	display: block;
+
+}
+.team__name {
+	margin-bottom: 8px;
+	font-size: 22px;
+	color: #2d3033;
+}
+.team__prof {
+	margin-bottom: 15px;
+	font-size: 13px;
+	color: red;
+	text-transform: uppercase;
+
+}
+.team__text {
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #6c7279;
+}
+
+
+/* social
+===================================================================================*/
+.social {
+	display: flex;
+}
+
+.social__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	margin-right: 4px;
+	border: 1px solid silver;
+	background-color: #fff;
+	transition: background .1s linear;
+
+}
+.social__item:hover {
+	background-color: #e8ecee;
+}
+.social__item:hover .social__icon {
+	fill: red;
+}
+.social__icon{
+	display: block;
+	height: 18px;
+	fill: #c6cacc;
+	transition: fill .1s linear;
+}
+
+
+/* reviews
+===================================================================================*/
+.reviews {
+	overflow: hidden;
+	background-color: #53354a;
+}
+.reviews__item {
+	display: flex;
+	flex-wrap: wrap;
+}
+.reviews__photo {
+	width: 50%;
+	height: 500px;
+	position: relative;
+}
+.reviews__img {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	z-index: 1;
+	transform: translateY(-50%);
+}
+.reviews__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+	padding-left: 80px;
+}
+.reviews__text {
+	margin-bottom: 25px;
+	font-family: 'Cardo', sans-serif;
+	font-style: italic;
+	font-size: 36px;
+	line-height: 1.2;
+	color: #fff;
+}
+.reviews__author {
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+
 }
